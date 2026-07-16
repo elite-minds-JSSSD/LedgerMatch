@@ -1,1 +1,331 @@
-<p>bank-transactions works!</p>
+<!-- ================================= -->
+<!-- Bank Transactions Page -->
+<!-- ================================= -->
+
+<div class="container-fluid py-4">
+
+    <!-- ================================= -->
+    <!-- Page Header -->
+    <!-- ================================= -->
+
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+
+        <!-- Left Side -->
+        <div>
+            <h2 class="page-title mb-1">
+                Bank Transactions
+            </h2>
+
+            <p class="page-subtitle mb-0">
+                View and analyze bank statement transactions
+            </p>
+        </div>
+
+        <!-- Right Side -->
+        <button class="btn upload-btn mt-3 mt-md-0">
+            <i class="bi bi-cloud-upload me-2"></i>
+            Upload Bank Statement
+        </button>
+
+    </div>
+
+    <!-- ================================= -->
+    <!-- Summary Cards -->
+    <!-- ================================= -->
+
+    <div class="row g-4 mb-4">
+
+        <!-- Total Transactions -->
+        <div class="col-xl-3 col-lg-6 col-md-6">
+            <div class="summary-card">
+
+                <div class="card-icon blue">
+                    <i class="bi bi-receipt"></i>
+                </div>
+
+                <div class="card-content">
+                    <h6>Total Transactions</h6>
+                    <h3>12,458</h3>
+                    <p>All time transactions</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Total Credits -->
+        <div class="col-xl-3 col-lg-6 col-md-6">
+            <div class="summary-card">
+
+                <div class="card-icon green">
+                    <i class="bi bi-arrow-down-circle"></i>
+                </div>
+
+                <div class="card-content">
+                    <h6>Total Credits</h6>
+                    <h3>₹ 7,842,125.50</h3>
+                    <p>Total incoming amount</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Total Debits -->
+        <div class="col-xl-3 col-lg-6 col-md-6">
+            <div class="summary-card">
+
+                <div class="card-icon orange">
+                    <i class="bi bi-arrow-up-circle"></i>
+                </div>
+
+                <div class="card-content">
+                    <h6>Total Debits</h6>
+                    <h3>₹ 5,673,890.25</h3>
+                    <p>Total outgoing amount</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Closing Balance -->
+        <div class="col-xl-3 col-lg-6 col-md-6">
+            <div class="summary-card">
+
+                <div class="card-icon purple">
+                    <i class="bi bi-bank"></i>
+                </div>
+
+                <div class="card-content">
+                    <h6>Closing Balance</h6>
+                    <h3>₹ 2,168,235.25</h3>
+                    <p>As on 16 Jul 2025</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- ================================= -->
+<!-- Filter Section -->
+<!-- ================================= -->
+
+<div class="row g-3 align-items-end">
+
+    <div class="col-lg-3">
+        <!-- Date -->
+    </div>
+
+    <div class="col-lg-2">
+        <!-- Transaction Type -->
+    </div>
+
+    <div class="col-lg-2">
+        <!-- Category -->
+    </div>
+
+    <div class="col-lg-3">
+        <!-- Search -->
+    </div>
+
+    <div class="col-lg-1">
+        <!-- Apply -->
+    </div>
+
+    <div class="col-lg-1">
+        <!-- Reset -->
+    </div>
+
+</div>
+<!-- ================================= -->
+<!-- Transactions Section -->
+<!-- ================================= -->
+
+<div class="card table-card">
+
+    <div class="card-header bg-white border-0 py-3">
+
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+
+            <h5 class="mb-2 mb-md-0 fw-bold">
+                Transactions (250)
+            </h5>
+
+            <div class="d-flex gap-2">
+
+                <button class="btn btn-outline-secondary table-btn">
+                    <i class="bi bi-download me-2"></i>
+                    Export CSV
+                </button>
+
+                <button class="btn btn-outline-secondary table-btn">
+                    <i class="bi bi-layout-three-columns me-2"></i>
+                    Columns
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="table-responsive">
+
+        <table class="table table-hover align-middle mb-0">
+
+            <thead>
+
+                <tr>
+
+                    <th style="width:50px">
+                        <input class="form-check-input" type="checkbox">
+                    </th>
+
+                    <th>Date</th>
+
+                    <th>Description / Narration</th>
+
+                    <th>Reference No.</th>
+
+                    <th>Cheque No.</th>
+
+                    <th>Type</th>
+
+                    <th>Category</th>
+
+                    <th class="text-end">Amount (₹)</th>
+
+                    <th class="text-end">Balance (₹)</th>
+
+                    <th class="text-center">Actions</th>
+
+                </tr>
+
+            </thead>
+
+           <tbody>
+
+    <tr>
+        <td><input class="form-check-input" type="checkbox"></td>
+        <td>16 Jul 2025</td>
+        <td>NEFT Payment - Vendor ABC Ltd</td>
+        <td>NEFT987654321</td>
+        <td>-</td>
+        <td><span class="badge bg-danger-subtle text-danger">Debit</span></td>
+        <td>Vendor Payment</td>
+        <td class="text-end text-danger fw-semibold">-25,000.00</td>
+        <td class="text-end">2,168,235.25</td>
+        <td class="text-center">
+            <button class="btn btn-sm btn-light action-btn">
+                <i class="bi bi-eye"></i>
+            </button>
+        </td>
+    </tr>
+
+    <tr>
+        <td><input class="form-check-input" type="checkbox"></td>
+        <td>16 Jul 2025</td>
+        <td>RTGS - Client XYZ Pvt Ltd</td>
+        <td>RTGS123456789</td>
+        <td>-</td>
+        <td><span class="badge bg-success-subtle text-success">Credit</span></td>
+        <td>Customer Receipt</td>
+        <td class="text-end text-success fw-semibold">+75,000.50</td>
+        <td class="text-end">2,193,235.25</td>
+        <td class="text-center">
+            <button class="btn btn-sm btn-light action-btn">
+                <i class="bi bi-eye"></i>
+            </button>
+        </td>
+    </tr>
+
+    <tr>
+        <td><input class="form-check-input" type="checkbox"></td>
+        <td>15 Jul 2025</td>
+        <td>IMPS Transfer - Office Expense</td>
+        <td>IMPS456789123</td>
+        <td>-</td>
+        <td><span class="badge bg-danger-subtle text-danger">Debit</span></td>
+        <td>Office Expense</td>
+        <td class="text-end text-danger fw-semibold">-3,450.00</td>
+        <td class="text-end">2,118,234.75</td>
+        <td class="text-center">
+            <button class="btn btn-sm btn-light action-btn">
+                <i class="bi bi-eye"></i>
+            </button>
+        </td>
+    </tr>
+
+    <tr>
+        <td><input class="form-check-input" type="checkbox"></td>
+        <td>15 Jul 2025</td>
+        <td>Interest Credited</td>
+        <td>INT987654321</td>
+        <td>-</td>
+        <td><span class="badge bg-success-subtle text-success">Credit</span></td>
+        <td>Interest Income</td>
+        <td class="text-end text-success fw-semibold">+1,258.75</td>
+        <td class="text-end">2,121,684.75</td>
+        <td class="text-center">
+            <button class="btn btn-sm btn-light action-btn">
+                <i class="bi bi-eye"></i>
+            </button>
+        </td>
+    </tr>
+
+</tbody>
+        </table>
+<!-- ================================= -->
+<!-- Table Footer -->
+<!-- ================================= -->
+
+<div class="card-footer bg-white border-0">
+
+    <div class="d-flex justify-content-between align-items-center flex-wrap py-3">
+
+        <div class="text-muted small">
+            Showing 1 to 10 of 250 entries
+        </div>
+
+        <nav>
+
+            <ul class="pagination mb-0">
+
+                <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                </li>
+
+                <li class="page-item active">
+                    <a class="page-link">1</a>
+                </li>
+
+                <li class="page-item">
+                    <a class="page-link">2</a>
+                </li>
+
+                <li class="page-item">
+                    <a class="page-link">3</a>
+                </li>
+
+                <li class="page-item disabled">
+                    <a class="page-link">...</a>
+                </li>
+
+                <li class="page-item">
+                    <a class="page-link">25</a>
+                </li>
+
+                <li class="page-item">
+                    <a class="page-link">Next</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</div>
+    </div>
+
+</div>
