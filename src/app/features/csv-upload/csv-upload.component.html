@@ -53,9 +53,18 @@
                             or
                         </small>
 
-                        <button class="btn btn-primary btn-sm">
-                            Browse File
-                        </button>
+                        <input
+    type="file"
+    #bankFileInput
+    accept=".csv"
+    hidden
+    (change)="onBankFileSelected($event)">
+
+<button
+    class="btn btn-primary btn-sm"
+    (click)="bankFileInput.click()">
+    Browse File
+</button>
 
                     </div>
 

@@ -210,4 +210,144 @@
 .chart-container canvas{
     width:100% !important;
     height:100% !important;
+}/*=========================================
+Reconciliation Table
+=========================================*/
+
+.table-card{
+    background:#fff;
+    border-radius:16px;
+    margin-top:30px;
+    padding:25px;
+    border:1px solid #e5e7eb;
+    box-shadow:0 3px 12px rgba(0,0,0,.05);
+}
+
+.table-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.table-header h4{
+    margin:0;
+    font-weight:700;
+}
+
+.table-header p{
+    margin:4px 0 0;
+    color:#6b7280;
+}
+
+.table-actions{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.search-box{
+    display:flex;
+    align-items:center;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    padding:0 12px;
+    height:42px;
+}
+
+.search-box input{
+    border:none;
+    outline:none;
+    margin-left:8px;
+    width:220px;
+}
+
+.table thead{
+    background:#f8fafc;
+}
+
+.table th{
+    font-weight:600;
+    color:#374151;
+    border:none;
+}
+
+.table td{
+    vertical-align:middle;
+}
+
+.table tbody tr:hover{
+    background:#f9fafb;
+}
+
+.amount{
+    font-weight:700;
+}
+
+.credit{
+    color:#16a34a;
+}
+
+.debit{
+    color:#dc2626;
+}
+
+.matched-badge{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+.partial-badge{
+    background:#fef3c7;
+    color:#b45309;
+}
+
+.unmatched-badge{
+    background:#fee2e2;
+    color:#b91c1c;
+}
+
+.icon-btn{
+    width:36px;
+    height:36px;
+    border:none;
+    border-radius:8px;
+    margin-right:6px;
+    transition:.3s;
+}
+
+.view{
+    background:#dbeafe;
+    color:#2563eb;
+}
+
+.edit{
+    background:#ede9fe;
+    color:#7c3aed;
+}
+
+.icon-btn:hover{
+    transform:translateY(-2px);
+}
+
+.table-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:20px;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.pagination .page-link{
+    border-radius:8px;
+    margin:0 3px;
+}
+.gauge-container{
+    position: relative;
+    width:100%;
+    height:180px;
 }

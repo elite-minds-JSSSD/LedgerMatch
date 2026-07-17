@@ -23,6 +23,9 @@ import { StatCardComponent } from './shared/components/stat-card/stat-card.compo
 import { ReconciliationSummaryComponent } from './shared/components/reconciliation-summary/reconciliation-summary.component';
 import { ReconciliationTrendComponent } from './shared/components/reconciliation-trend/reconciliation-trend.component';
 import { UploadBankStatementComponent } from './shared/components/upload-bank-statement/upload-bank-statement.component';
+import { RegisterComponent } from './features/auth/register/register.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LandingComponent } from './pages/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -46,12 +49,16 @@ import { UploadBankStatementComponent } from './shared/components/upload-bank-st
     StatCardComponent,
     ReconciliationSummaryComponent,
     ReconciliationTrendComponent,
-    UploadBankStatementComponent
+    UploadBankStatementComponent,
+    RegisterComponent,
+    LandingComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+ imports: [
+  BrowserModule,
+  AppRoutingModule,
+  ReactiveFormsModule
+]
+  ,
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -12,8 +12,15 @@ import { DiscrepancyAnalysisComponent } from './features/discrepancy-analysis/di
 import { AuditReportsComponent } from './features/audit-reports/audit-reports.component';
 import { ProfileComponent } from './features/profile/profile.component';
 import { LoginComponent } from './features/auth/login/login.component';
-
+import { RegisterComponent } from './features/auth/register/register.component';
+import { LandingComponent } from './pages/landing/landing.component';
 const routes: Routes = [
+
+  // Public Pages
+  {
+    path: '',
+    component: LandingComponent
+  },
 
   {
     path: 'login',
@@ -21,15 +28,21 @@ const routes: Routes = [
   },
 
   {
-    path: '',
+    path: 'register',
+    component: RegisterComponent
+  },
+
+  // Main Application
+  {
+    path: 'app',
     component: MainLayoutComponent,
     children: [
 
       {
-  path: '',
-  redirectTo: 'dashboard',
-  pathMatch: 'full'
-},
+        path: '',
+        redirectTo: 'dashboard',
+        pathMatch: 'full'
+      },
 
       {
         path: 'dashboard',
@@ -76,11 +89,10 @@ const routes: Routes = [
 
   {
     path: '**',
-    redirectTo: 'dashboard'
+    redirectTo: ''
   }
 
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
